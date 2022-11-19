@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ShopperSpawner.cs" type="Script" id=1]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 100, 597, 0, 0, 0, 0, 836, 597, 0, 0, 0, 0, 102, 601 )
+}
+
+[node name="ShopperSpawner" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="SpawnPath" type="Path2D" parent="."]
+curve = SubResource( 1 )
+
+[node name="Obj" type="PathFollow2D" parent="SpawnPath"]
+position = Vector2( 100, 597 )
