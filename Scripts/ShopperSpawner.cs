@@ -3,7 +3,7 @@ using Godot;
 public class ShopperSpawner : Node2D
 {
 	public int MaxShoppers = 5;
-	public float ShopperChance = 1;
+	public float ShopperChance = 0.5f;
 	private PackedScene ShopperPrefab = ResourceLoader.Load<PackedScene>("res://Scenes/Shopper.tscn");
 
 	private PathFollow2D spawnPathObj;

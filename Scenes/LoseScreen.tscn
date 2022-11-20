@@ -7,6 +7,7 @@
 [node name="LoseScreen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+rect_pivot_offset = Vector2( -232, -286 )
 script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="."]
@@ -34,5 +35,15 @@ margin_bottom = 10.0
 grow_horizontal = 2
 custom_fonts/font = ExtResource( 2 )
 text = "Ok"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 411.0
+margin_top = 213.0
+margin_right = 599.0
+margin_bottom = 252.0
+grow_horizontal = 2
+custom_fonts/font = ExtResource( 2 )
+text = "Why you lost"
+align = 1
 
 [connection signal="pressed" from="Button" to="." method="OnButtonPressed"]

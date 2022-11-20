@@ -6,5 +6,6 @@ public class StartScreen : Control
 	{
 		MoneyTracker.Reset();
 		Progress.Reset();
+		GetTree().ChangeScene(Shop.LoadRandomShop());
 	}
 }

@@ -25,7 +25,7 @@ public class ItemType
     {
         get
         {
-            return $"res://Art/Icons/{Name}.png";
+            return $"res://Art/Icons/{Name}.svg";
         }
     }
 }

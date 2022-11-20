@@ -35,3 +35,13 @@ margin_bottom = 10.0
 grow_horizontal = 2
 custom_fonts/font = ExtResource( 1 )
 text = "Ok"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 411.0
+margin_top = 213.0
+margin_right = 599.0
+margin_bottom = 252.0
+grow_horizontal = 2
+custom_fonts/font = ExtResource( 1 )
+text = "Why you won"
+align = 1
