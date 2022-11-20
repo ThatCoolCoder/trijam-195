@@ -15,7 +15,7 @@ public static class MoneyTracker
         if (level == 2) return 50;
         if (level == 3) return 440;
         if (level == 4) return 1560;
-        if (level == 5) return 3770;
+        if (level == 5) return 4770;
         return 0;
     }
 }
