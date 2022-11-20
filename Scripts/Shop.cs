@@ -70,7 +70,7 @@ public class Shop : Node2D
 	private void UpdateUI()
 	{
 		GetNode<Label>("CanvasLayer/UI/Money").Text = $"${MoneyTracker.Money}";
-		GetNode<Button>("CanvasLayer/UI/BuyNextShop").Text = $"Go to next shop for ${MoneyTracker.ShopPrice(Progress.Level + 1)}";
+		GetNode<Button>("CanvasLayer/UI/BuyNextShop").Text = $"Go to next shop for ${MoneyTracker.ShopPrice(Progress.Level)}";
 	}
 
 	private void OnRentTimerTimeout()
@@ -87,8 +87,8 @@ public class Shop : Node2D
 
 	private void _on_BuyNextShop_pressed()
 	{
-		if (Progress.Level < 4) Progress.Level += 1;
 		MoneyTracker.Money -= MoneyTracker.ShopPrice(Progress.Level);
+		if (Progress.Level < 4) Progress.Level += 1;
 		GD.Print(MoneyTracker.Money);
 		CheckIfLost(0);
 		GetTree().ChangeScene(Shop.LoadRandomShop());
